@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent serviceIntent =new Intent(MainActivity.this,FirstService.class);
+                serviceIntent.putExtra("inputExtra","notification");
                 startService(serviceIntent);
             }
         });
